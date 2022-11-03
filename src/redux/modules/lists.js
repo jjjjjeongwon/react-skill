@@ -17,8 +17,6 @@ const CREATE = "lists/CREATE";
 const initialState = {
   list: [
     // { word: "set", mean: "두다", ex: "예시" },
-    // { word: "set", mean: "두다", ex: "예시" },
-    // { word: "set", mean: "두다", ex: "예시" },
   ],
 };
 
@@ -44,7 +42,6 @@ export const loadDictionaryFB = () => {
       dic_list.push({id:b.id, ...b.data() });
     });
     console.log(dic_list);
-// [{id:1234,word:fff,mean:ddd,ex:dff},{id:}]
 
     dispatch(loadDictionary(dic_list)); //27->여기로 =={ type: "bucket/LOAD", dic_list }
   };
